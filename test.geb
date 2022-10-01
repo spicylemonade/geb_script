@@ -1,43 +1,28 @@
-var x. = 5
-int print x
+// var x. = 5
+// int print x
 
 
-var bumdo. = 5*11-2
-//prints bumdo:53
-char print [098 117 109 100 111 058 032]
-int print bumdo
+// var bumdo. = 5*11-2
+// //prints bumdo:53
+// char print [098 117 109 100 111 058 032]
+// int print bumdo
 
-var z. = 4+x
-//prints z:9
-char print [122 058 032]
-int print z
+// var z. = 4+x
+// //prints z:9
+// char print [122 058 032]
+// int print z
 
-var test. = z-2
-//prints test: 7
-char print [116 101 115 116 058 032]
-int print test
+// var test. = z-2
+// //prints test: 7
+// char print [116 101 115 116 058 032]
+// int print test
 
-test = 55
-int print test
+// test = 55
+// int print test
 
 //prints hello world ascii
+loop 2
 char print [104 101 108 108 111 032 119 111 114 108 100 013 010]
 
-
-
-//alternative approach
-//char print 104
-//char print 101
-//char print 108
-//char print 108
-//char print 111
-//char print 032
-//char print 119
-//char print 111
-//char print 114
-//char print 108
-//char print 100
-
-//character buffers
-//char print 013
-//char print 010
+loop 3
+int print 69420

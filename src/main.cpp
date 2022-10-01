@@ -70,6 +70,7 @@ void func(std::ifstream &myfile, std::string &myline, std::vector<variable> &var
             std::cout << (char)mp.eval(ids);
         }
     }
+
     if (myline.find("char") == std::string::npos && myline.find("int") == std::string::npos && myline.find("var") == std::string::npos && myline.find("=") != std::string::npos)
     {
         int point = myline.find('=');
@@ -104,6 +105,15 @@ void parse(std::ifstream &myfile, std::string &myline)
     {
 
         std::getline(myfile, myline);
+        if (myline.find("loop") == 0)
+        {
+            std::string temp = myline;
+            std::getline(myfile, myline);
+            for (int i = 0; i < std::stoi(temp.substr(temp.find("p") + 1)) - 1; i++)
+            {
+                func(myfile, myline, vars, ids);
+            }
+        }
         func(myfile, myline, vars, ids);
     }
     // std::cout << myline << '\n';
