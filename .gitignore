@@ -1,0 +1,3 @@
+output/main.exe
+src/main.o
+src/extern/math_parse.o
