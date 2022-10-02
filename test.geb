@@ -1,28 +1,21 @@
-// var x. = 5
-// int print x
+
+var new_var. = 77
+
+int print new_var
+
+var i. = 0
+
+//wow that works
+loop 10
+i = i+1
+
+int print i
+
+char print 104
+
+String print 'hello world'/
+
+String print 'wubaluba dub dubbbbbbbbbbbbbbb'/
 
 
-// var bumdo. = 5*11-2
-// //prints bumdo:53
-// char print [098 117 109 100 111 058 032]
-// int print bumdo
 
-// var z. = 4+x
-// //prints z:9
-// char print [122 058 032]
-// int print z
-
-// var test. = z-2
-// //prints test: 7
-// char print [116 101 115 116 058 032]
-// int print test
-
-// test = 55
-// int print test
-
-//prints hello world ascii
-loop 2
-char print [104 101 108 108 111 032 119 111 114 108 100 013 010]
-
-loop 3
-int print 69420

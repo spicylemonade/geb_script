@@ -70,6 +70,12 @@ void func(std::ifstream &myfile, std::string &myline, std::vector<variable> &var
             std::cout << (char)mp.eval(ids);
         }
     }
+    if (myline.find("String") == 0 && myline.find("print") != std::string::npos)
+    {
+        // MiniParser mp(myline.substr(myline.find('print') + 8));
+
+        std::cout << std::string(&myline[myline.find("'") + 1], &myline[myline.find("'/")]) << std::endl;
+    }
 
     if (myline.find("char") == std::string::npos && myline.find("int") == std::string::npos && myline.find("var") == std::string::npos && myline.find("=") != std::string::npos)
     {
